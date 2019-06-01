@@ -1,0 +1,34 @@
+#!/bin/sh
+
+# Autostart
+~/.fehbg &
+numlockx &
+setxkbmap -layout us,ru && setxkbmap -option 'grp:alt_shift_toggle' &
+~/.config/polybar/launch.sh &
+nm-applet --sm-disable &
+udiskie &
+sxhkd &
+compton -fbC --config ~/.config/compton/compton.conf &
+
+bspc monitor -d I II III IV V VI VII VIII IX X
+
+BW=1
+bspc config border_width $BW
+bspc config window_gap -$BW
+bspc config top_padding 30
+for side in right bottom left ; do
+	bspc config ${side}_padding $BW
+done
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+# bspc rule -a Gimp desktop='^8' state=floating follow=on
+# bspc rule -a Chrome desktop='^2'
+bspc rule -a Code desktop='^1'
+bspc rule -a Google-chrome desktop='^2'
+bspc rule -a TelegramDesktop desktop='^3'
+# bspc rule -a mplayer2 state=floating
+# bspc rule -a Kupfer.py focus=on
+# bspc rule -a Screenkey manage=off
