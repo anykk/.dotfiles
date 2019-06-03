@@ -12,10 +12,10 @@ compton -fbC --config ~/.config/compton/compton.conf &
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 
-BW=1
+BW=2
 bspc config border_width $BW
 bspc config window_gap -$BW
-bspc config top_padding 30
+bspc config top_padding 29.5
 for side in right bottom left ; do
 	bspc config ${side}_padding $BW
 done
