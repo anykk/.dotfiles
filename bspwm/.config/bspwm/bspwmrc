@@ -8,7 +8,7 @@ setxkbmap -layout us,ru && setxkbmap -option 'grp:alt_shift_toggle' &
 nm-applet --sm-disable &
 udiskie &
 sxhkd &
-compton -fbC --config ~/.config/compton/compton.conf &
+compton -bC --config ~/.config/compton/compton.conf &
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 
