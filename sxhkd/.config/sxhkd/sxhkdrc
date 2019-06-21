@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-	kitty /usr/bin/fish
+	kitty /usr/bin/zsh
 
 # program launcher
 super + d
@@ -13,6 +13,10 @@ super + d
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
+
+# lock screen
+super + l
+	betterlockscreen -l dimblur
 
 #
 # bspwm hotkeys
