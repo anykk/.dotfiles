@@ -75,6 +75,7 @@ plugins=(
 
 
 # User configuration
+SPACESHIP_PROMPT_ADD_NEWLINE="false"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
