@@ -16,8 +16,6 @@
 ;
 ;==========================================================
 
-# 
-
 [colors]
 background = ${xrdb:background:#222}
 foreground = ${xrdb:foreground:#222}

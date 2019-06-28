@@ -4,7 +4,6 @@ alsa-utils
 amdctl-git
 amd-ucode
 ant-dracula-gtk-theme
-betterlockscreen
 bspwm
 chromium
 compton
@@ -20,11 +19,10 @@ htop
 insomnia
 kitty
 light
-lightdm-mini-greeter
+ly-git
 maim
 neofetch
 neovim
-network-manager-applet
 noto-fonts-cjk
 noto-fonts-emoji
 numlockx
@@ -38,11 +36,13 @@ ranger
 redshift-minimal
 rofi
 stow
+sway
 sxhkd
 telegram-desktop
 thermald
 tlp-rdw
 ttf-fira-code
+ttf-fira-go
 ttf-font-awesome
 ttf-inconsolata
 ttf-roboto
@@ -70,6 +70,7 @@ xorg-x11perf
 xorg-xbacklight
 xorg-xcmsdb
 xorg-xcursorgen
+xorg-xdpyinfo
 xorg-xdriinfo
 xorg-xev
 xorg-xgamma

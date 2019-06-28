@@ -16,7 +16,7 @@ super + Escape
 
 # lock screen
 super + l
-	betterlockscreen -l dimblur
+	light-locker-command -l
 
 #
 # bspwm hotkeys

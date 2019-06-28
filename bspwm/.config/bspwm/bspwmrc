@@ -2,12 +2,13 @@
 
 # Autostart
 ~/.fehbg &
+conky &
 numlockx &
 setxkbmap -layout us,ru && setxkbmap -option 'grp:alt_shift_toggle' &
 ~/.config/polybar/launch.sh &
-nm-applet --sm-disable &
 udiskie &
 sxhkd &
+light-locker --no-late-locking --lock-on-suspend &
 compton -bC --config ~/.config/compton/compton.conf &
 
 bspc monitor -d I II III IV V VI VII VIII IX X
@@ -26,5 +27,4 @@ bspc config gapless_monocle      true
 
 bspc rule -a Code desktop='^1'
 bspc rule -a Chromium desktop='^2'
-bspc rule -a Google-chrome desktop='^2'
 bspc rule -a TelegramDesktop desktop='^3'
