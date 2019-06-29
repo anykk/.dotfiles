@@ -196,6 +196,17 @@ mode "resize" {
 # Enter resize mode
 bindsym $mod+r mode "resize"
 
+# Special keys
+
+# Volume
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+# Brightness
+bindsym XF86MonBrightnessDown exec light -U 5.
+bindsym XF86MonBrightnessUp exec light -A 5.
+
 #################
 #░░░░░░░░░░░░░░░#
 #░░█▀▄░█▀█░█▀▄░░#
@@ -224,5 +235,5 @@ default_border none
 focus_follows_mouse no
 
 # Gaps
-gaps outer 10
+gaps outer 5
 gaps inner 5
