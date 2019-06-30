@@ -24,13 +24,13 @@ window#waybar.hidden {
   background: transparent;
 }
 
-window#waybar.termite #window,
-window#waybar.Firefox #window,
+/* window#waybar.kitty #window,
+window#waybar.Chromium #window,
 window#waybar.Navigator #window,
 window#waybar.PCSX2 #window {
   color: #4d4d4d;
   background: #e6e6e6;
-}
+} */
 
 #workspaces {
   margin-top: 8px;
