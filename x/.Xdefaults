@@ -1,4 +1,4 @@
-! Dracula Xresources palette
+! Dracula palette
 *.foreground: #F8F8F2
 *.background: #282A36
 *.color0:     #000000
@@ -17,15 +17,6 @@
 *.color14:    #9AEDFE
 *.color7:     #BFBFBF
 *.color15:    #E6E6E6
-
-URxvt.font: [codeset=UTF-8]xft:DejaVu Sans Mono:size=12
-URxvt.scrollBar: false
-URxvt.cursorBlink: 1
-
-! clickable urls
-URxvt.perl-ext-common: default,matcher
-URxvt.url-launcher: /usr/bin/xdg-open
-URxvt.matcher.button: 1
 
 ! rofi
 rofi.padding:         20

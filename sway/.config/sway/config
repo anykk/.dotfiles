@@ -22,12 +22,11 @@ set $term env kitty
 set $swaylock swaylock-fancy -f "Hack-Regular-Nerd-Font-Complete"
 
 # Menu
-set $menu-run rofi -show run
-set $menu-window rofi -show window
+set $menu-run rofi -modi "drun,run" -show drun -lines 12 -width 1152 -columns 3 -sidebar-mode -show-icons
+set $menu-window rofi -modi window -show window -lines 12 -width 1152 -columns 3 -sidebar-mode -show-icons
 
 # Output names
-#set $monitor-left HDMI-A-1
-#set $monitor-center HDMI-A-2
+set $monitor-center eDP-1
 
 # Workspace names
 set $workspace1 1
@@ -41,11 +40,11 @@ set $workspace8 8
 set $workspace9 9
 set $workspace10 10
 
-# input
+# Input configuration
 
 # Keyboard
 input * xkb_layout "us,ru"
-input * xkb_options "grp:shift_alt_toggle"
+input * xkb_options "grp:alt_shift_toggle"
 
 # Touchpad
 input "1739:30143:DLL07BD:00_06CB:75BF_Touchpad" {
@@ -62,12 +61,9 @@ input "1739:30143:DLL07BD:00_06CB:75BF_Touchpad" {
 #############################
 
 # Backgrounds
-#output $monitor-left bg /home/short/Photos/wallpapers/left.jpg fill
-#output $monitor-center bg /home/short/Photos/wallpapers/center.jpg fill
+output $monitor-center bg ~/Pictures/background.jpg fill
 
 # Positioning
-#output $monitor-left resolution 1920x1080 position 0,300
-#output $monitor-center resolution 1920x1080 position 1920,0
 
 ###################################################
 #░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░#
@@ -235,5 +231,5 @@ default_border none
 focus_follows_mouse no
 
 # Gaps
-gaps outer 5
+gaps outer 8
 gaps inner 5
