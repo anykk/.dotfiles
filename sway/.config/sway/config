@@ -21,6 +21,10 @@ set $term env kitty
 # Swaylock
 set $swaylock swaylock-fancy -f "Hack-Regular-Nerd-Font-Complete"
 
+# Screenshot
+set $screenshot grim ~/Images/Screenshots/$(date +"%Y-%m-%d-%H-%M-%S").png
+set $screenclip slurp | grim -g - ~/Images/Screenshots/$(date +"%Y-%m-%d-%H-%M-%S").png
+
 # Menu
 set $menu-run rofi -modi "drun,run" -show drun -lines 12 -width 1152 -columns 3 -sidebar-mode -show-icons
 set $menu-window rofi -modi window -show window -lines 12 -width 1152 -columns 3 -sidebar-mode -show-icons
@@ -39,6 +43,10 @@ set $workspace7 7
 set $workspace8 8
 set $workspace9 9
 set $workspace10 10
+
+# Assign apps to workspaces
+assign [class="(?i)code"] $workspace1
+assign [class="(?i)chromium"] >$workspace2
 
 # Input configuration
 
@@ -61,7 +69,7 @@ input "1739:30143:DLL07BD:00_06CB:75BF_Touchpad" {
 #############################
 
 # Backgrounds
-output $monitor-center bg ~/Pictures/background.jpg fill
+output $monitor-center bg ~/Images/background.jpg fill
 
 # Positioning
 
@@ -86,7 +94,7 @@ bindsym $mod+Shift+r reload
 bindsym $mod+Shift+e exit
 
 # Lock
-bindsym $mod+Control+l exec $swaylock
+bindsym $mod+l exec $swaylock
 
 # Open run menu
 bindsym $mod+d exec $menu-run
@@ -202,6 +210,10 @@ bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 # Brightness
 bindsym XF86MonBrightnessDown exec light -U 5.
 bindsym XF86MonBrightnessUp exec light -A 5.
+
+# Screenshots
+bindsym Print exec $screenshot
+bindsym ctrl+Print exec $screenclip
 
 #################
 #░░░░░░░░░░░░░░░#
