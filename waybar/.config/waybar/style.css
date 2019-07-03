@@ -15,9 +15,8 @@ window#waybar.hidden {
 }
 
 #window {
-  margin-top: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
+  margin-top: 5px;
+  padding: 0 16px 0;
   border-radius: 26px;
   transition: none;
   color: transparent;
@@ -25,9 +24,7 @@ window#waybar.hidden {
 }
 
 #workspaces {
-  margin-top: 8px;
-  margin-left: 12px;
-  margin-bottom: 0;
+  margin: 5px 0 0 9px;
   border-radius: 26px;
   background: #282a36;
   transition: none;
@@ -58,11 +55,8 @@ window#waybar.hidden {
 #memory,
 #clock,
 #battery {
-  margin-top: 8px;
-  margin-left: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
-  margin-bottom: 0;
+  margin: 5px 0 0 5px;
+  padding: 0 16px 0;
   border-radius: 26px;
   transition: none;
 }
@@ -92,12 +86,13 @@ window#waybar.hidden {
   background: #ff6e67;
 }
 
-#clock {
-  color: #f8f8f2;
-  background: #282a36;
-}
-
 #battery {
   color: #4d4d4d;
   background: #ff79c6;
+}
+
+#clock {
+  margin-right: 9px;
+  color: #f8f8f2;
+  background: #282a36;
 }

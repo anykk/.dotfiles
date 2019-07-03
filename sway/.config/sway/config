@@ -243,5 +243,5 @@ default_border none
 focus_follows_mouse no
 
 # Gaps
-gaps outer 8
+gaps outer 5
 gaps inner 5
