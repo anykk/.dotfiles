@@ -46,7 +46,7 @@ set $workspace10 10
 
 # Assign apps to workspaces
 assign [class="(?i)code"] $workspace1
-assign [class="(?i)chromium"] >$workspace2
+assign [class="(?i)chromium"] $workspace2
 
 # Input configuration
 
@@ -94,7 +94,7 @@ bindsym $mod+Shift+r reload
 bindsym $mod+Shift+e exit
 
 # Lock
-bindsym $mod+l exec $swaylock
+bindsym $mod+ctrl+l exec $swaylock
 
 # Open run menu
 bindsym $mod+d exec $menu-run

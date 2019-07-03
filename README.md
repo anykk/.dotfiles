@@ -1,8 +1,8 @@
-## Updating pkglist.txt:
+## Updating `Packages`:
 ```console
-foo@bar:~$ bash -c 'comm -23 <(pacman -Qqett | sort) <(pacman -Qqg base -g base-devel | sort | uniq)' > pkglist.txt
+foo@bar:~$ comm -23 <(pacman -Qqett | sort) <(pacman -Qqg base -g base-devel | sort | uniq) > Packages
 ```
-## Install packages from pkglist.txt:
+## Install packages:
 ```console
-foo@bar:~# pacman -S --needed - < pkglist.txt
+foo@bar:~# yay -S --needed - < Packages
 ```
