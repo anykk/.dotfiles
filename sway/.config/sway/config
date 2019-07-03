@@ -16,7 +16,7 @@ set $up k
 set $right l
 
 # Terminal
-set $term env kitty
+set $term env alacritty
 
 # Swaylock
 set $swaylock swaylock-fancy -f "Hack-Regular-Nerd-Font-Complete"
@@ -45,8 +45,8 @@ set $workspace9 9
 set $workspace10 10
 
 # Assign apps to workspaces
-assign [class="(?i)code"] $workspace1
-assign [class="(?i)chromium"] $workspace2
+assign [class="(?i)^code$"] $workspace1
+assign [class="(?i)^chromium$"] $workspace2
 
 # Input configuration
 
