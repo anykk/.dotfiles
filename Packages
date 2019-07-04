@@ -1,7 +1,9 @@
 alacritty
 amd-ucode
+ant-dracula-gtk-theme
 chromium
 efibootmgr
+grim
 grub
 htop
 imv
@@ -24,7 +26,7 @@ rofi
 slurp
 stow
 sway
-swaylock-fancy-git
+swaylock
 telegram-desktop
 tlp
 ttf-fira-code
