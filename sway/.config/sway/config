@@ -19,7 +19,8 @@ set $right l
 set $term env alacritty
 
 # Swaylock
-set $swaylock swaylock --color 251e3e -fel --indicator-radius 70 --font "Hack-Regular-Nerd-Font-Complete"
+set $swaylock swaylock --color 251e3e -fel --indicator-radius 70 -t \
+--font 'Noto Sans' --bs-hl-color FF5555 --inside-clear-color CAA9FA --key-hl-color FF79C6
 
 # Screenshot
 set $screenshot grim ~/Images/Screenshots/$(date +"%Y-%m-%d-%H-%M-%S").png

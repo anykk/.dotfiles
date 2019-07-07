@@ -7,11 +7,10 @@ grim
 grub
 htop
 imv
-kitty
 light
 mako
 neovim
-nerd-fonts-hack
+nerd-fonts-noto-sans-regular-complete
 networkmanager
 noto-fonts-cjk
 noto-fonts-emoji
@@ -29,10 +28,7 @@ sway
 swaylock
 telegram-desktop
 tlp
-ttf-fira-code
-ttf-fira-go
-ttf-hack-powerline-git
-ttf-iosevka
+ttf-mononoki
 udiskie
 visual-studio-code-bin
 waybar
