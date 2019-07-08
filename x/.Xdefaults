@@ -21,7 +21,7 @@
 ! rofi
 rofi.padding:         20
 rofi.hide-scrollbar:  true
-rofi.font:            FiraGO 12
+rofi.font:            Noto Sans 12
 rofi.color-enabled:   true
 
 rofi.color-window:   #161520,#29282f,#00161520
