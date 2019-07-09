@@ -76,6 +76,8 @@ plugins=(
 
 
 # User configuration
+export GDK_BACKEND=wayland
+export QT_QPA_PLATFORM=wayland-egl
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
